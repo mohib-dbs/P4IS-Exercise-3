@@ -2,7 +2,7 @@
     <head>
         <title> Exercise-3 </title>
         <script>
-                let c=()=>{
+                function sum(){
                   let d=0;
                   let a=document.getElementById('an').value;
                   let b=document.getElementById('bn').value;
@@ -13,17 +13,17 @@
                     }
                   }
                   console.log(d);
-                  alert("The result is: " + d);
+                  alert("The sum of all multiples of ${a} or ${b} below ${n} is: ${d}");
                   document.getElementById('result').textContent = "The sum of multiples of "+ a +" or "+ b +" up to "+ n +" is: " + d;
                 }
         </script>
     </head>
     <body>
       <p>Enter a N to find the sum of its multiples of A or B:</p>
-      <p>Input A: <input type="text" id="an"></p>
-      <p>Input B: <input type="text" id="bn"></p>
-      <p>Input N: <input type="text" id="in"></p>
-      <button onclick='c()'>Submit</button>
+      <p>Input A: <input type="number" id="an"></p>
+      <p>Input B: <input type="number" id="bn"></p>
+      <p>Input N: <input type="number" id="in"></p>
+      <button onclick='sum()'>Submit</button>
       <p id="result"></p>
     </body>
 </html>
