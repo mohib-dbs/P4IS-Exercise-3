@@ -2,20 +2,20 @@
     <head>
         <title> Exercise-3 </title>
         <script>
-                function sum(){
-                  let d=0;
-                  const a=document.getElementById('an').value;
-                  const b=document.getElementById('bn').value;
-                  const n=document.getElementById('in').value;
-                  for (let i=1;i<n;i++){
-                    if (i%a===0 || i%b===0){
-                      d+=i;
-                    }
-                  }
-                  console.log(d);
-                  alert("The sum of all multiples of "+ a +" or "+b+" below "+n+" is: "+d);
-                  document.getElementById('result').textContent = ("The sum of multiples of "+ a +" or "+ b +" up to "+ n +" is: " + d);
+          const a=document.getElementById('an').value;
+          const b=document.getElementById('bn').value;
+          const n=document.getElementById('in').value;
+          function sum(){
+            let d=0;
+            for (let i=1;i<n;i++){
+              if (i%a===0 || i%b===0){
+                d+=i;
                 }
+              }
+            console.log(d);
+            alert("The sum of all multiples of "+ a +" or "+b+" below "+n+" is: "+d);
+            document.getElementById('result').textContent = ("The sum of multiples of "+ a +" or "+ b +" up to "+ n +" is: " + d);
+          }
         </script>
     </head>
     <body>
